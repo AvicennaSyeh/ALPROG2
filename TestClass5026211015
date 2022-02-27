@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class TestClass {
+public class TestClass5026211015 {
 
 
 // menggunakan scanner
 
     public static void main(String[] args) {
 
-        ComputeMethods cm = new ComputeMethods();
+        ComputeMethods5026211015 cm = new ComputeMethods5026211015();
         Scanner scn = new Scanner(System.in);
 
         // ini part untuk merubah dari fahrenheit ke celcius
