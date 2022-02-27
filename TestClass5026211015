@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class TestClass {
+
+
+// menggunakan scanner
+
+    public static void main(String[] args) {
+
+        ComputeMethods cm = new ComputeMethods();
+        Scanner scn = new Scanner(System.in);
+
+        // ini part untuk merubah dari fahrenheit ke celcius
+        System.out.println("Fahrenheit to Celcius");
+        System.out.println("Masuk kan angka yang ingin di konversi ==>");
+        double x = scn.nextDouble();
+        double celcius = cm.fToC(x);
+        System.out.printf("100 F = %f\n", celcius);
+
+
+        // ini part untuk phytagoras
+        System.out.println("Phytagoras Calculator");
+        System.out.println("Masuk kan panjang sisi pertama ==>");
+        double sisi1 = scn.nextDouble();
+        System.out.println("Masuk kan panjang sisi kedua==>");
+        double sisi2 = scn.nextDouble();
+
+        double hypotenuse = cm.hypotenuse (sisi1,sisi2);
+        System.out.println("Hypotenuse = " + hypotenuse);
+
+        // ini part untuk random dice
+        System.out.println("Berapa total mata dadu yang akan keluar ?");
+        System.out.println("Mari kita lihat seberapa beruntung anda hari ini.");
+        int rollDice = cm.roll();
+
+        System.out.println("Apakah anda cukup beruntung hari ini? =" + rollDice);
+
+    }
+
+}
